@@ -14,6 +14,7 @@ test('status should be 200', async () => {
     } catch (error) {
         console.error(error);
     }
+	expect(actualStatus).toBe(200)
 });
 
 test('response body should contain expected data', async () => {
@@ -31,4 +32,5 @@ test('response body should contain expected data', async () => {
     } catch (error) {
         console.error(error);
     }
+	expect(actualStatus).toBe(200)
 });
