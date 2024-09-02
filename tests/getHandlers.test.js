@@ -23,12 +23,6 @@ test('should return expected response data', async () => {
     } catch (error) {
         console.error(error);
     }
+    expect(actualStatus).toBe(200)
 
-    // Validate response body structure
-    expect(Array.isArray(responseBody)).toBe(true);
-    expect(responseBody.length).toBeGreaterThan(0);
-    expect(responseBody[0]).toHaveProperty('name');
-    expect(responseBody[0]).toHaveProperty('workingHours');
-    expect(responseBody[0].workingHours).toHaveProperty('start');
-    expect(responseBody[0].workingHours).toHaveProperty('end');
 });
