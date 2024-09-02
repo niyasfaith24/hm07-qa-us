@@ -12,6 +12,7 @@ test('status should be 200', async () => {
     } catch (error) {
     
     }
+	expect(actualStatus).toBe(200)
 
 });
 
@@ -30,6 +31,6 @@ test('Response Body should change the price of the product', async () => {
     } catch (error) {
         
     }
-    
+    expect(actualStatus).toBe(200)
 });
 
