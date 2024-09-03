@@ -13,7 +13,6 @@ test('status should be 200', async () => {
     
     }
 	expect(actualStatus).toBe(200)
-
 });
 
 test('Response Body should change the price of the product', async () => {
